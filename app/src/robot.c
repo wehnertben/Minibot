@@ -97,10 +97,15 @@ void Handle_Disabled_State()
 
 void Process_Remote_Input()
 {
+    g_robot_state.chassis.x_speed = g_remote.controller.left_stick.x;
+    g_robot_state.chassis.y_speed = g_remote.controller.left_stick.y;
+    g_robot_state.chassis.omega = g_remote.controller.right_stick.x;
+
 }
 
 void Process_Chassis_Control()
 {
+    Chassis_Ctrl_Loop();
 }
 
 void Process_Gimbal_Control()

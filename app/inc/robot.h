@@ -47,10 +47,12 @@ typedef struct
   // controller input
   float vx;
   float vy;
+  float omega;
 
   // mouse input
   float vx_keyboard;
   float vy_keyboard;
+  float omega_keyboard;
 
   // previous key states
   uint8_t prev_B;
