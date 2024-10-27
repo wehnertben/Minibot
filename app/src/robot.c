@@ -87,6 +87,7 @@ void Handle_Disabled_State()
     g_robot_state.launch.IS_FLYWHEEL_ENABLED = 0;
     g_robot_state.chassis.x_speed = 0;
     g_robot_state.chassis.y_speed = 0;
+    g_robot_state.chassis.omega = 0;//
 
     if (g_remote.online_flag == REMOTE_ONLINE && g_remote.controller.right_switch != DOWN)
     {
